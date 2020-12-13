@@ -1,0 +1,33 @@
+{
+  "name": "gym-champs",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gittyang/Gym-Champs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gittyang/Gym-Champs/issues"
+  },
+  "homepage": "https://github.com/gittyang/Gym-Champs#readme",
+  "dependencies": {
+    "array-sort": "^1.0.0",
+    "fs.realpath": "^1.0.0",
+    "function-bind": "^1.1.1",
+    "get-caller-file": "^1.0.3",
+    "get-value": "^2.0.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^5.0.0"
+  },
+  "description": ""
+}

@@ -1,0 +1,82 @@
+// --- Config Styles ---
+
+:root {
+  /* Fonts */
+  --mainFont: 'Staatliches', cursive;
+  --textFont: 'Open Sans', sans-serif;
+  --secondaryFont: 'Raleway', sans-serif;
+
+  /* Colors */
+  --primary: #b13333;
+  --primar: #FF5B00;
+  --darkGray: #1b1b1b;
+  --lightGray: #EBEBEB;
+
+  --white: #ffffff;
+  --black: #000000;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* Now 10px = 1rem! */
+  word-wrap: break-word;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--secondaryFont);
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: white;
+}
+
+/* Headings */
+h1, h2, h3 , h4 , p{
+  font-family: var(--mainFont);
+  margin: .5rem 0;
+  line-height: 1.2;
+}
+
+p {
+  font-family: var(--secondaryFont);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem; 
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 120rem; /* 1200px */
+  width: 95%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+}
