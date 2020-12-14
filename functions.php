@@ -87,10 +87,32 @@ function gymchamps_setup() {
   // SEA Titles
   add_theme_support('title-tag');
 }
-
 add_action('after_setup_theme', 'gymchamps_setup');
 
 
+// Create a Sidebar Widget - 3 Step: Functions.php -> WP Setup -> Front End Code
+function gymchamps_widgets() {
+  // widget can be displayed anywhere, 
+  // but the function to initialize is called register_sidebar
+  register_sidebar(array(
+    // initialize with array containing different configurations
+
+    // name for WP panel
+    'name' => 'Sidebar',
+    // computer id for WP rendering, no spacing
+    // sent to dynamic_sidebar() in sidebar.php
+    'id'=> 'sidebar',
+    // html displayed
+    'before_widget' => '<div class="widget">',
+    'after_widget'=> '</div>',
+    'before_title' => '<h3 class="text-primary">',
+    'after_title' => '</h3>',
+  )); 
+
+  // sidebar 2 can be created here as well
+}
+
+add_action('widgets_init', 'gymchamps_widgets');
 
 ?>
 
