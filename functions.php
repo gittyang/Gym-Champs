@@ -70,4 +70,27 @@ function gymchamps_scripts() {
 add_action('wp_enqueue_scripts', 'gymchamps_scripts');
 
 
+// --- Enable Featured Image in WP Pages + Others ---
+function gymchamps_setup() {
+
+  // Register New Image Size
+  add_image_size('square', 350, 350, true);
+  add_image_size('portrait', 350, 724, true);
+  add_image_size('box', 400, 375, true);
+  add_image_size('mediumSize', 600, 400, true);
+  add_image_size('blog', 966, 644, true);
+  // add_image_size( $name:string, $width:integer, $height:integer, $crop:boolean|array )
+
+  // Add Featured Image to WP block editor
+  add_theme_support('post-thumbnails');
+
+  // SEA Titles
+  add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'gymchamps_setup');
+
+
+
 ?>
+
