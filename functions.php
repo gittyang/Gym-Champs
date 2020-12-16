@@ -2,7 +2,7 @@
 
 
 
-// Create the Menus tab on WP admin panel - located at Appearance section
+// --- Create the Menus tab on WP admin panel - located at Appearance section ---
 // 3 Step: Functions.php -> WP Setup -> Front End Code (header.php)
 function gymchamps_menus() {
   // Wordpress Function
@@ -16,7 +16,6 @@ add_action('init', 'gymchamps_menus');
 
 
 // --- Add Stylesheets and JS Files ---
-
 function gymchamps_scripts() {
 
   // Normalize CSS
@@ -90,7 +89,7 @@ function gymchamps_setup() {
 add_action('after_setup_theme', 'gymchamps_setup');
 
 
-// Create a Sidebar Widget - 3 Step: Functions.php -> WP Setup -> Front End Code
+// --- Create a Sidebar Widget - 3 Step: Functions.php -> WP Setup -> Front End Code ---
 function gymchamps_widgets() {
   // widget can be displayed anywhere, 
   // but the function to initialize is called register_sidebar
@@ -111,8 +110,12 @@ function gymchamps_widgets() {
 
   // sidebar 2 can be created here as well
 }
-
 add_action('widgets_init', 'gymchamps_widgets');
+
+
+// --- Link to the queries file
+require get_template_directory() . '/inc/queries.php';
+
 
 ?>
 

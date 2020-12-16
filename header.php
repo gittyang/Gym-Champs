@@ -7,6 +7,7 @@
   <title>Gym Champs</title>
 </head>
 <body>
+
   
 <header class="site-header">
 

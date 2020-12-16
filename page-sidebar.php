@@ -1,5 +1,7 @@
 <!-- This page contains the sidebar -->
 
+<p>page-sidebar.php</p>
+
 <?php  
 
 /*

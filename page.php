@@ -1,5 +1,6 @@
 <!-- page.php refers to Default WordPress Pages -->
 
+<p>page.php</p>
 
 <?php get_header(); ?>
 
