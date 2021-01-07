@@ -1,12 +1,13 @@
 
-<!-- 
-  This file contains the Front End code to display the post type "Classes"
-  which the information is created in the WP admin panel
-  The Back End code where this informaiton is queried from 
-  is located in gymchamps_post_types.php located in the plugins folder
--->
-
 <?php 
+
+  // Leaving a comment before this php code = media library bug
+
+  // This file contains the Front End code to display the post type "Classes"
+  // which the information is created in the WP admin panel
+  // The Back End code where this informaiton is queried from 
+  // is located in gymchamps_post_types.php located in the plugins folder
+
 
 // This section contains the Front End code to display the "Gym Classes"
 

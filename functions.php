@@ -1,6 +1,7 @@
 <?php 
 
-
+// --- Link to the queries file
+require get_template_directory() . '/inc/queries.php'; 
 
 // --- Create the Menus tab on WP admin panel - located at Appearance section ---
 // 3 Step: Functions.php -> WP Setup -> Front End Code (header.php)
@@ -112,10 +113,8 @@ function gymchamps_widgets() {
 }
 add_action('widgets_init', 'gymchamps_widgets');
 
-
+// This line of code causes images to not show up in WP admin
 // --- Link to the queries file
-require get_template_directory() . '/inc/queries.php';
-
-
+// require get_template_directory() . '/inc/queries.php'; 
 ?>
 

@@ -1,7 +1,7 @@
-<!-- single.php refers to WordPress Posts (Blogs) -->
+<!-- single post from classes requires "single-'name of post type'.php" -->
+<!-- if page does not load -> settings -> permalinks -> save 2x -->
 
-
-<p>hello from single.php</p>
+<!-- single-gymchamps_classes.php refers to an individual Classes page-->
 
 <?php get_header(); ?>
 

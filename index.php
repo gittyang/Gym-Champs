@@ -2,7 +2,7 @@
 
 <?php  
 
-echo "hello world";
+echo "hello from index.php";
 
 ?>
 

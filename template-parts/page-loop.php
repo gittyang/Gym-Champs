@@ -14,7 +14,7 @@
     endif;
 
     // Check for current post type
-    if( get_post_type() === 'gymfitness_classes'):
+    if( get_post_type() === 'gymchamps_classes'):
       $start_time = get_field('start_time');
       $end_time = get_field('end_time');
   ?>
