@@ -1,6 +1,8 @@
 <?php  
 
 // Leaving comments before this php block = image bug
+// Leaving html comments also = image bug
+// --- hello from gymchamps_post_types.php ---
 
 // This file contains the backend code for the creation of the "Classes" plugin in the WP admin dashboard
 // The Front End code to display the classes is located at Queries.php
@@ -17,9 +19,9 @@
 */
 
 // Prevent the execution of the following code if accessed directly
-if(!defined('ABSPATH')) die();
+if(!defined('ABSPATH')) die(); ?>
 
-
+<?php
 // Register new Custom Post Type (Classes)
 function gymchamps_class_post_type() {
 

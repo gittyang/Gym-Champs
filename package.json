@@ -20,7 +20,8 @@
     "fs.realpath": "^1.0.0",
     "function-bind": "^1.1.1",
     "get-caller-file": "^1.0.3",
-    "get-value": "^2.0.6"
+    "get-value": "^2.0.6",
+    "lightbox2": "^2.11.3"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",

@@ -1,9 +1,8 @@
 <!-- single.php refers to WordPress Posts (Blogs) -->
 
-
-<p>hello from single.php</p>
-
 <?php get_header(); ?>
+
+--- hello from single.php ---
 
 <Main class="container page section with-sidebar">
   <div class="page-content">

@@ -30,8 +30,8 @@ function gymchamps_scripts() {
   
   // load only on gallery.php
   if( basename( get_page_template() ) === 'gallery.php'):
-  // Lightbox CSS
-  wp_enqueue_style('lightboxcss', get_template_directory_uri() . '/css/lightbox.min.css', array(), '2.1.11');
+    // Lightbox CSS
+    wp_enqueue_style('lightboxcss', get_template_directory_uri() . '/css/lightbox.min.css', array(), '2.1.11');
   endif;
 
   // BX Slider
@@ -50,7 +50,8 @@ function gymchamps_scripts() {
   
   // load only on gallery.php
   if( basename( get_page_template() ) === 'gallery.php'):
-  wp_enqueue_script('lightboxjs', get_template_directory_uri() . '/js/lightbox.min.js', array('jquery'), '1.0.10', true);
+    // Lightbox JS
+    wp_enqueue_script('lightboxjs', get_template_directory_uri() . '/js/lightbox.min.js', array('jquery'), '1.0.10', true);
   endif;
 
   // BX Slider
