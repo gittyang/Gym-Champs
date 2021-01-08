@@ -8,7 +8,7 @@
     if( has_post_thumbnail() ) :
       // Display the image according to size (size located in functions.php)
       // + change class
-      the_post_thumbnail('box', array('class' => 'featured-img') );
+      the_post_thumbnail('mediumSize', array('class' => 'featured-img') );
     else:
     
     endif;

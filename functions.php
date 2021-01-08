@@ -1,7 +1,6 @@
 <?php 
 
-// --- Link to the queries file
-require get_template_directory() . '/inc/queries.php'; 
+
 
 // --- Create the Menus tab on WP admin panel - located at Appearance section ---
 // 3 Step: Functions.php -> WP Setup -> Front End Code (header.php)
@@ -14,6 +13,7 @@ function gymchamps_menus() {
 }
  // Hook
 add_action('init', 'gymchamps_menus');
+
 
 
 // --- Add Stylesheets and JS Files ---
@@ -70,6 +70,7 @@ function gymchamps_scripts() {
 add_action('wp_enqueue_scripts', 'gymchamps_scripts');
 
 
+
 // --- Enable Featured Image in WP Pages + Others ---
 function gymchamps_setup() {
 
@@ -88,6 +89,7 @@ function gymchamps_setup() {
   add_theme_support('title-tag');
 }
 add_action('after_setup_theme', 'gymchamps_setup');
+
 
 
 // --- Create a Sidebar Widget - 3 Step: Functions.php -> WP Setup -> Front End Code ---
@@ -113,8 +115,12 @@ function gymchamps_widgets() {
 }
 add_action('widgets_init', 'gymchamps_widgets');
 
+
+
 // This line of code causes images to not show up in WP admin
 // --- Link to the queries file
-// require get_template_directory() . '/inc/queries.php'; 
+require get_template_directory() . '/inc/queries.php'; 
+
+
 ?>
 

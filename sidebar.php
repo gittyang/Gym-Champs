@@ -1,6 +1,8 @@
-<!-- This page shows the sidebar -->
+<!-- This page shows the blogs sidebar -->
 
 <aside class="sidebar">
+--- hello from sidebar.php ---
+
   <?php
   
   // Located at functions.php - sidebar widget

@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
+--- hello from index.php ---
 <?php  
 
-echo "hello from index.php";
 
 ?>
 

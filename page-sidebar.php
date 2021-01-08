@@ -1,7 +1,5 @@
 <!-- This page contains the sidebar -->
 
-<p>page-sidebar.php</p>
-
 <?php  
 
 /*
@@ -9,6 +7,8 @@
 */
 
 get_header(); ?>
+
+--- page-sidebar.php ---
 
 <Main class="container page section with-sidebar">
   <div class="page-content">

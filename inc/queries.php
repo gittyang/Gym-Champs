@@ -13,14 +13,14 @@
 
 // Needs $number parameter to display 4 posts in front-page.php, 
 // Include -1 to remove error and instead display all
-function gymchamps_classes_list() {
-  echo "from queries.php"; ?>
+function gymchamps_classes_list() { ?>
+  --- hello from queries.php ---
 
    <!-- gymchamps_classes_list function displays all gym classes -->
   <ul class="classes-list">
   <?php 
       $args = array(
-        'post_type' => 'gymchamps_classes', // located in gym_post_types.php in Plugins folder
+        'post_type' => 'gymchamps_classes', // located in gymchamps_post_types.php in Plugins folder
         'posts_per_page' => $number
       );
 
@@ -49,7 +49,7 @@ function gymchamps_classes_list() {
 
     </li>
 
-      <!-- Due to custom WP query, reset to standard query  -->
+    <!-- Due to custom WP query, reset to standard query  -->
     <?php endwhile; wp_reset_postdata(); ?>
   </ul>
 
