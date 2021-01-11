@@ -1,3 +1,5 @@
+<!-- Default page for blogs or root -->
+
 <?php get_header(); ?>
 
 --- hello from index.php ---
