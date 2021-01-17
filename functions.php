@@ -118,9 +118,34 @@ add_action('widgets_init', 'gymchamps_widgets');
 
 
 
-// This line of code causes images to not show up in WP admin
 // --- Link to the queries file
 require get_template_directory() . '/inc/queries.php'; 
+
+
+
+// Display the Hero image on the background of the front-page
+function gym_hero_image() {
+  $front_page_id = get_option('page_on_front'); // located @ wp-admin/options.php
+  $image_id = get_field('hero_image', $front_page_id); // located @ wp home page ACF hero image
+  $image = $image_id['url'];
+
+  // Create a false stylesheet
+  wp_register_Style('custom', false);
+  wp_enqueue_style('custom');
+
+  $featured_image_css = " 
+    body.home .site-header {
+      background-image: linear-gradient( rgba(0,0,0, 0.75), rgba(0,0,0, 0.75) ), 
+      url( $image );
+      background-size: cover; 
+    }
+  ";
+  // Dynamically add to front end
+  wp_add_inline_style('custom', $featured_image_css);
+
+}
+
+add_action('init', 'gym_hero_image');
 
 
 ?>
