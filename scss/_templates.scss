@@ -2,7 +2,7 @@
 
 
 // --- Front Page--- 
-// Area Section
+// Gym Area Section
 .section-areas {
 
   .areas-container {
@@ -164,8 +164,12 @@
       .testimonials-list {
 
         .testimonial {
-          color: white;
+          // border: 2px solid red;
           padding: 0 5rem;
+
+          p {
+            color: white;
+          }
 
         }
         

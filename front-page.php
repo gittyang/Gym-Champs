@@ -83,6 +83,17 @@
   </section>
 
 
+  <!--  Testimonials Sections -->
+  <section class="testimonials">
+    <h2 class="text-center text-primary">Testimonials</h2>
+    <div class="container-testimonials">
+      
+      <?php gymchamps_testimonials_list(); ?>
+    
+    </div>
+  </section>
+
+
   <?php endwhile; ?>
 
 <?php get_footer(); ?>

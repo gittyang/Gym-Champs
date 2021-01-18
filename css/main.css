@@ -378,8 +378,9 @@ body.home .site-header {
       box-shadow: none;
       border: none; }
       .testimonials .container-testimonials .bx-wrapper .testimonials-list .testimonial {
-        color: white;
         padding: 0 5rem; }
+        .testimonials .container-testimonials .bx-wrapper .testimonials-list .testimonial p {
+          color: white; }
       .testimonials .container-testimonials .bx-wrapper .testimonials-list .testimonial-footer {
         display: flex;
         justify-content: flex-end;

@@ -147,3 +147,59 @@ function gymchamps_instructors() {
 add_action( 'init', 'gymchamps_instructors', 0 );
 
 // ---
+
+// Register new Custom Post Type (Testimonials)
+// After adding this code, the Testimonials Section will be displayed on WP dashboard
+function gymchamps_testimonials() {
+
+	$labels = array(
+		'name'                  => _x( 'Testimonials', 'Post Type General Name', 'gymchamps' ),
+		'singular_name'         => _x( 'Testimonial', 'Post Type Singular Name', 'gymchamps' ),
+		'menu_name'             => __( 'Testimonials', 'gymchamps' ),
+		'name_admin_bar'        => __( 'Testimonial', 'gymchamps' ),
+		'archives'              => __( 'Archive', 'gymchamps' ),
+		'attributes'            => __( 'Attributes', 'gymchamps' ),
+		'parent_item_colon'     => __( 'Parent Testimonial ', 'gymchamps' ),
+		'all_items'             => __( 'All Testimonials', 'gymchamps' ),
+		'add_new_item'          => __( 'Add Testimonial', 'gymchamps' ),
+		'add_new'               => __( 'Add Testimonial', 'gymchamps' ),
+		'new_item'              => __( 'New Testimonial', 'gymchamps' ),
+		'edit_item'             => __( 'Edit Testimonial', 'gymchamps' ),
+		'update_item'           => __( 'Update Testimonial', 'gymchamps' ),
+		'view_item'             => __( 'View Testimonial', 'gymchamps' ),
+		'view_items'            => __( 'View Testimonials', 'gymchamps' ),
+		'search_items'          => __( 'Search Testimonial', 'gymchamps' ),
+		'not_found'             => __( 'Not found in Trash', 'gymchamps' ),
+		'featured_image'        => __( 'Featured Image', 'gymchamps' ),
+		'set_featured_image'    => __( 'Save Featured Image', 'gymchamps' ),
+		'remove_featured_image' => __( 'Remove Featured Image', 'gymchamps' ),
+		'use_featured_image'    => __( 'Use as Featured Image', 'gymchamps' ),
+		'insert_into_item'      => __( 'Insert Into Testimonial', 'gymchamps' ),
+		'uploaded_to_this_item' => __( 'Add At Testimonial', 'gymchamps' ),
+		'items_list'            => __( 'Testimonial List', 'gymchamps' ),
+		'items_list_navigation' => __( 'Navigate toTestimonials', 'gymchamps' ),
+		'filter_items_list'     => __( 'Filter Testimonials', 'gymchamps' ),
+	);
+	$args = array(
+		'label'                 => __( 'Testimonials', 'gymchamps' ),
+		'description'           => __( 'Testimonials para el Sitio Web', 'gymchamps' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+        'menu_position'         => 8,
+        'menu_icon'             => 'dashicons-editor-quote',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => false,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'testimonials', $args );
+
+}
+add_action( 'init', 'gymchamps_testimonials', 0 );
