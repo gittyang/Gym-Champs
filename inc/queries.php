@@ -13,7 +13,7 @@
 
 // Needs $number parameter to display 4 posts in front-page.php, 
 // Include -1 to remove error and instead display all
-function gymchamps_classes_list() { ?>
+function gymchamps_classes_list($number = -1) { ?>
   --- hello from queries.php ---
 
    <!-- gymchamps_classes_list function displays all gym classes -->
@@ -55,6 +55,50 @@ function gymchamps_classes_list() { ?>
 
 
 <?php } ?>
+
+<!-- Instructors Section -->
+
+<?php
+// This file contains the Front End code to display the "Instructors"
+// The Back End code where the Post Type "Instructors" Plugin was created
+// Is located at gym_post_types.php in the Plugins folder after the "Classes" section
+
+function gymchamps_instructors_list() { ?> 
+  --- hello from queries.php ---
+  <ul class="instructor-list">
+    <?php 
+      // method for querying the data from "Instructors" post type
+      $args = array(
+        'post_type' => 'instructors', // instructors name located at gym_post_type.php
+        'posts_per_page' => 20
+      );
+      $instructors = new WP_Query($args);
+
+      while( $instructors->have_posts() ): $instructors->the_post(); ?>
+
+      <li class="instructor">
+        <?php the_post_thumbnail('mediumSize'); ?>
+        <div class="content text-center">
+          <h3><?php the_title(); ?></h3>
+          <?php the_content(); ?>
+          <div class="specialty">
+            <?php 
+              $specialty = get_field('specialty');
+
+              foreach($specialty as $s):?> 
+              
+              <span class="tag"><?php echo $s; ?></span>
+
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </li>
+
+    <?php endwhile; wp_reset_postdata(); ?>
+  </ul>
+
+<?php }
+?>
 
 
 

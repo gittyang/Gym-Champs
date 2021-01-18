@@ -4,8 +4,11 @@
 // Leaving html comments also = image bug
 // --- hello from gymchamps_post_types.php ---
 
-// This file contains the backend code for the creation of the "Classes" plugin in the WP admin dashboard
-// The Front End code to display the classes is located at Queries.php
+// This file contains the backend code for the creation of Custom Post Types in the WP admin dashboard
+
+// First section contains the code for "Classes" 
+// Second section contains the code for "Instructors"
+// Third section contains the code for "Testimonials"
 
 
 /*
@@ -22,7 +25,9 @@
 if(!defined('ABSPATH')) die(); ?>
 
 <?php
+
 // Register new Custom Post Type (Classes)
+// After adding this code, the classes section will be displayed on WP dashboard
 function gymchamps_class_post_type() {
 
 	// WordPress admin dashboard user interface
@@ -83,3 +88,62 @@ function gymchamps_class_post_type() {
 add_action( 'init', 'gymchamps_class_post_type', 0 );
 
 //  ---
+
+// Register new Custom Post Type (Instructors)
+// After adding this code, the Instructors Section will be displayed on WP dashboard
+function gymchamps_instructors() {
+
+	$labels = array(
+		'name'                  => _x( 'Instructors', 'Post Type General Name', 'gymchamps' ),
+		'singular_name'         => _x( 'Instructor', 'Post Type Singular Name', 'gymchamps' ),
+		'menu_name'             => __( 'Instructors', 'gymchamps' ),
+		'name_admin_bar'        => __( 'Instructor', 'gymchamps' ),
+		'archives'              => __( 'Archive', 'gymchamps' ),
+		'attributes'            => __( 'Attributes', 'gymchamps' ),
+		'parent_item_colon'     => __( 'Parent Instructor', 'gymchamps' ),
+		'all_items'             => __( 'All Instructors', 'gymchamps' ),
+		'add_new_item'          => __( 'Add Instructor', 'gymchamps' ),
+		'add_new'               => __( 'Add Instructor', 'gymchamps' ),
+		'new_item'              => __( 'New Instructor', 'gymchamps' ),
+		'edit_item'             => __( 'Edit Instructor', 'gymchamps' ),
+		'update_item'           => __( 'Update Instructor', 'gymchamps' ),
+		'view_item'             => __( 'View Instructor', 'gymchamps' ),
+		'view_items'            => __( 'View Instructors', 'gymchamps' ),
+		'search_items'          => __( 'Search Instructor', 'gymchamps' ),
+		'not_found'             => __( 'Not Found', 'gymchamps' ),
+		'not_found_in_trash'    => __( 'Not Found in Trash', 'gymchamps' ),
+		'featured_image'        => __( 'Featured Image', 'gymchamps' ),
+		'set_featured_image'    => __( 'Save Featured Image', 'gymchamps' ),
+		'remove_featured_image' => __( 'Remove Featured Image', 'gymchamps' ),
+		'use_featured_image'    => __( 'Use as Featured Image', 'gymchamps' ),
+		'insert_into_item'      => __( 'Insert in Instructor', 'gymchamps' ),
+		'uploaded_to_this_item' => __( 'Add in Instructor', 'gymchamps' ),
+		'items_list'            => __( 'List Instructors', 'gymchamps' ),
+		'items_list_navigation' => __( 'Navigate to Instructors', 'gymchamps' ),
+		'filter_items_list'     => __( 'Filter Instructors', 'gymchamps' ),
+	);
+	$args = array(
+		'label'                 => __( 'Instructors', 'gymchamps' ),
+		'description'           => __( 'Instructors for website', 'gymchamps' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+        'menu_position'         => 7,
+        'menu_icon'             => 'dashicons-admin-users',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => false,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'instructors', $args );
+
+}
+add_action( 'init', 'gymchamps_instructors', 0 );
+
+// ---
