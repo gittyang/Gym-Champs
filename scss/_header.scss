@@ -115,7 +115,7 @@ body.home {
           border-radius: .5rem;
           color: white;
           font-size: 2rem;
-          font-family: var(--mainFont);
+          font-family: var(--promptFont);
           margin-top: 2rem;
           padding: 1rem 2rem;
 
@@ -151,7 +151,7 @@ body.home {
             border-radius: .5rem;
             color: white;
             font-size: 2rem;
-            font-family: var(--mainFont);
+            font-family: var(--promptFont);
             margin-top: 2rem;
             padding: 1rem 2rem;
 
@@ -162,12 +162,8 @@ body.home {
           }
         }
       }
-
-    
-
     }
   }
-
 }
 
 
@@ -198,7 +194,7 @@ body.home {
 
   .main-menu li a {
     color: var(--white);
-    font-family: var(--mainFont);
+    font-family: var(--ralewayFont);
     padding: .5rem 1.5rem;
 
     @media (min-width: 768px) {
@@ -248,7 +244,7 @@ body.home {
 }
 
 .slicknav_nav a {
-  font-family: var(--mainFont);
+  font-family: var(--promptFont);
   font-size: 2.4rem;
   text-align: center;
 }

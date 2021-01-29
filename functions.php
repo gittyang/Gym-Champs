@@ -23,8 +23,8 @@ function gymchamps_scripts() {
   wp_enqueue_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), '8.0.1');
 
   // Google Fonts
-  wp_enqueue_style('googlefont', 'https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap', array(), '1.0.0');
-  
+  wp_enqueue_style('googlefont', 'https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Raleway:wght@400&display=swap', array(), null);
+
   // Slick Nav CSS
   wp_enqueue_style('slicknavcss', get_template_directory_uri() . '/css/slicknav.min.css', array(), '1.0.10');
   

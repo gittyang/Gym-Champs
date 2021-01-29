@@ -1,7 +1,8 @@
 // --- Footer Styles---
 
 .site-footer {
-  background-color: var(--lightGray);
+  background-color: var(--darkGray);
+  color: var(--white);
   width: 100%;
   padding: 4rem 0;
 }
@@ -29,17 +30,12 @@
     margin-right: 0;
   }
   
-  .footer-menu a{
-    font-family: var(--titleFont);
-    font-size: 2rem;
-    color: var(--black);
-  }
 }
 
 .copyright {
   text-align: center;
   flex: 1;
-  // font-family: var(--mainFont);
+  font-family: var(--promptFont);
   font-size: 2rem;
   margin: 0;
 }

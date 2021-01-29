@@ -2,12 +2,15 @@
 
 :root {
   /* Fonts */
-  --titleFont: 'Prompt', sans-serif;
+  --promptFont: 'Prompt';
+  --ralewayFont: 'Raleway';
+  --staat: 'Staatliches';
+  --open: 'Open Sans';
 
   /* Colors */
   --primary: #970C10;
-  --primar: #FF5B00;
-  --darkGray: rgba(27, 42, 55, 1);
+  --secondary: #faf7f0;
+  --darkGray: rgba(27, 27, 27, 1);
   --lightGray: #EBEBEB;
 
   --white: #ffffff;
@@ -24,21 +27,21 @@ html {
 }
 
 body {
-  font-family: var(--titleFont);
+  // font-family: var(--titleFont);
   font-size: 1.6rem;
   line-height: 2;
-  background-color: white;
+  background-color: var(--secondary);
 }
 
 /* Headings */
-h1, h2, h3 , h4 , p{
-  font-family: var(--titleFont);
+h1, h2, h3 , h4 {
+  font-family: var(--promptFont);
   margin: .5rem 0;
   line-height: 1.2;
 }
 
-p {
-  font-family: var(--titleFont);
+p, a {
+  font-family: var(--ralewayFont);
   font-size: 1.5rem;
 }
 
@@ -52,11 +55,12 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  // font-weight: normal;
 }
 
 h4 {
-  font-size: 2rem; 
-  font-weight: normal;
+  font-size: 2.2rem; 
+  // font-weight: normal;
 }
 
 a {

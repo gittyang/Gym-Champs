@@ -8,7 +8,7 @@
 
       <div class="card-content">
         <a href="<?php the_permalink(); ?>">
-          <h3><?php the_title(); ?></h3>
+          <h4><?php the_title(); ?></h4>
         </a>
 
         <p class="meta"> <span>By:</span>

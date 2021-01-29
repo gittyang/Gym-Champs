@@ -2,6 +2,12 @@
 
 
 // --- Front Page--- 
+
+.section-welcome {
+  background-color: var(--secondary);
+}
+
+
 // Gym Area Section
 .section-areas {
 
@@ -57,12 +63,13 @@
 }
 
 // Classes Section
-.classes-homepage {
-  background-color: var(--lightGray);
+.section-classes {
+  background-color: var(--secondary);
 }
 
 // Instructors Section
 .instructors {
+  background-color: var(--secondary);
 
   .container {
 
@@ -88,7 +95,7 @@
               padding: .5rem 2rem;
               border-radius: .5rem;
               color: white;
-              font-family: var(--mainFont);
+              font-family: var(--promptFont);
               font-size: 2.2rem;
             }
           }
@@ -248,7 +255,7 @@
 
       p.content-class {
         font-weight: 700;
-        font-family: var(--secondaryFont);
+        font-family: var(--promptFontyFont);
         font-size: 2rem;
         text-align: center;
       }
@@ -301,7 +308,6 @@
     p {
       color: var(--primary);
       font-weight: 700;
-      font-size: 2rem;
       margin: 0;
     }
     
@@ -483,7 +489,7 @@
       color: white;
       padding: .5rem 2rem;
       font-size: 2.2rem;
-      font-family: var(--mainFont);
+      font-family: var(--promptFont);
       border-radius: .5rem;
     }
 
@@ -522,7 +528,7 @@
   .wpcf7-submit {
     background-color: var(--primary);
     font-size: 2rem;
-    font-family: var(--mainFont);
+    font-family: var(--promptFont);
     color: white;
     padding: 1rem;
     width: 100px;

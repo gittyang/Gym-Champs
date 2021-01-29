@@ -8,7 +8,7 @@
 
   <!-- Welcome Section -->
 
-  <section class="welcome text-center section">
+  <section class="section section-welcome text-center">
     <h2 class="text-primary"><?php the_field('welcome_heading'); ?></h2>
     <p><?php the_field('welcome_text'); ?></p>
   </section>
@@ -55,7 +55,7 @@
   </section>
 
   <!-- Classes Section -->
-  <section class="classes-homepage">
+  <section class="section-classes">
     <div class="container section">
       <h2 class="text-primary text-center">Our Classes</h2>
 
