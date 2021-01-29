@@ -23,8 +23,8 @@ function gymchamps_scripts() {
   wp_enqueue_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), '8.0.1');
 
   // Google Fonts
-  wp_enqueue_style('googlefont', 'https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&family=Staatliches&display=swap', array(), '1.0.0');
-
+  wp_enqueue_style('googlefont', 'https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap', array(), '1.0.0');
+  
   // Slick Nav CSS
   wp_enqueue_style('slicknavcss', get_template_directory_uri() . '/css/slicknav.min.css', array(), '1.0.10');
   
@@ -129,6 +129,14 @@ function gym_hero_image() {
   $image_id = get_field('hero_image', $front_page_id); // located @ wp home page ACF hero image
   $image = $image_id['url'];
 
+  // echo "<pre>";
+  // var_dump($front_page_id);
+  // echo "</pre>";
+
+  // echo "<pre>";
+  // var_dump($image_id);
+  // echo "</pre>";
+
   // Create a false stylesheet
   wp_register_Style('custom', false);
   wp_enqueue_style('custom');
@@ -144,8 +152,32 @@ function gym_hero_image() {
   wp_add_inline_style('custom', $featured_image_css);
 
 }
-
 add_action('init', 'gym_hero_image');
+
+
+
+// Display the testimonial image on the background of Testimonial
+function gym_testimonial_image() {
+  $front_page_id = get_option('page_on_front'); // located @ wp-admin/options.php
+  $image_id = get_field('testimonial_background', $front_page_id); // located @ wp home page ACF hero image
+  $image = $image_id['url'];
+
+  // Create a false stylesheet
+  wp_register_Style('custom', false);
+  wp_enqueue_style('custom');
+
+  $testimonial_image_css = " 
+    body.home .testimonials {
+      background-image: linear-gradient( rgba(0,0,0, 0.75), rgba(0,0,0, 0.75) ), 
+      url( $image );
+      background-size: cover; 
+    }
+  ";
+  // Dynamically add to front end
+  wp_add_inline_style('custom', $testimonial_image_css);
+
+}
+add_action('init', 'gym_testimonial_image');
 
 
 ?>

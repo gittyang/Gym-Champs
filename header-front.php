@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Comptatible" content="ie=edge">
   <?php wp_head(); ?>
-  <title>Document</title>
+  <title>Gym Champs</title>
 </head>
 <body <?php body_class(); ?> >
 

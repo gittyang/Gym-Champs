@@ -13,7 +13,6 @@
 // --- Classes Section ---
 // This section contains the Front End code to display the "Gym Classes"
 
-
 // Needs $number parameter to display 4 posts in front-page.php, 
 // Include -1 to remove error and instead display all
 function gymchamps_classes_list($number = -1) { ?>
@@ -62,7 +61,6 @@ function gymchamps_classes_list($number = -1) { ?>
 // Instructors Section
 // This section contains the Front End code to display the "Gym Instructors"
 
-
 function gymchamps_instructors_list() { ?> 
   --- hello from queries.php ---
 
@@ -105,34 +103,34 @@ function gymchamps_instructors_list() { ?>
 // Testimonials Section
 // This section contains the Front End code to display the "Gym Testimonials"
 
-
-
 function gymchamps_testimonials_list() { ?>
+  <p class="text-primary"> --- hello from queries.php --- </p> 
   <ul class="testimonials-list">
-  <?php 
-    // method for querying the data from "Testimonials" post type in gym_post_types.php in Plugins folder
-    $args = array(
-    // if 'posts_type' = queried from blogs = HEADACHE
-    'post_type' => 'testimonials', // testimonial name located at gym_post_type.php
-    'posts_per_page' => 10
-  );
 
-  $testimonials = new WP_Query($args);
-  while( $testimonials->have_posts() ): $testimonials->the_post(); ?>
-  
+    <?php 
+      // method for querying the data from "Testimonials" post type in gym_post_types.php in Plugins folder
+      $args = array(
+      // if 'posts_type' = queried from blogs = HEADACHE
+      'post_type' => 'testimonials', // testimonial name located at gym_post_type.php
+      'posts_per_page' => 10
+    );
 
-  <li class="testimonial text-center">
-    <blockquote>
-      <?php the_content(); ?>
-    </blockquote>
+    $testimonials = new WP_Query($args);
+    while( $testimonials->have_posts() ): $testimonials->the_post(); ?>
+    
 
-    <footer class="testimonial-footer">
-      <?php the_post_thumbnail('thumbnail'); ?>
-      <p><?php the_title(); ?></p>
-    </footer>
-  </li>
+    <li class="testimonial text-center">
+      <blockquote>
+        <?php the_content(); ?>
+      </blockquote>
 
-  <?php endwhile; wp_reset_postdata(); ?>
+      <footer class="testimonial-footer">
+        <?php the_post_thumbnail('thumbnail'); ?>
+        <p><?php the_title(); ?></p>
+      </footer>
+    </li>
+
+    <?php endwhile; wp_reset_postdata(); ?>
   </ul>
 
 <?php }

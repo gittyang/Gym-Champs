@@ -30,7 +30,7 @@
   }
   
   .footer-menu a{
-    font-family: var(--mainFont);
+    font-family: var(--titleFont);
     font-size: 2rem;
     color: var(--black);
   }
@@ -39,7 +39,7 @@
 .copyright {
   text-align: center;
   flex: 1;
-  font-family: var(--mainFont);
+  // font-family: var(--mainFont);
   font-size: 2rem;
   margin: 0;
 }

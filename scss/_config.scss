@@ -2,14 +2,12 @@
 
 :root {
   /* Fonts */
-  --mainFont: 'Staatliches', cursive;
-  --textFont: 'Open Sans', sans-serif;
-  --secondaryFont: 'Raleway', sans-serif;
+  --titleFont: 'Prompt', sans-serif;
 
   /* Colors */
-  --primary: #b13333;
+  --primary: #970C10;
   --primar: #FF5B00;
-  --darkGray: #1b1b1b;
+  --darkGray: rgba(27, 42, 55, 1);
   --lightGray: #EBEBEB;
 
   --white: #ffffff;
@@ -26,7 +24,7 @@ html {
 }
 
 body {
-  font-family: var(--secondaryFont);
+  font-family: var(--titleFont);
   font-size: 1.6rem;
   line-height: 2;
   background-color: white;
@@ -34,13 +32,13 @@ body {
 
 /* Headings */
 h1, h2, h3 , h4 , p{
-  font-family: var(--mainFont);
+  font-family: var(--titleFont);
   margin: .5rem 0;
   line-height: 1.2;
 }
 
 p {
-  font-family: var(--secondaryFont);
+  font-family: var(--titleFont);
   font-size: 1.5rem;
 }
 

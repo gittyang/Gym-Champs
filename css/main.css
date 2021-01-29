@@ -1,12 +1,10 @@
 :root {
   /* Fonts */
-  --mainFont: 'Staatliches', cursive;
-  --textFont: 'Open Sans', sans-serif;
-  --secondaryFont: 'Raleway', sans-serif;
+  --titleFont: 'Prompt', sans-serif;
   /* Colors */
-  --primary: #b13333;
+  --primary: #970C10;
   --primar: #FF5B00;
-  --darkGray: #1b1b1b;
+  --darkGray: rgba(27, 42, 55, 1);
   --lightGray: #EBEBEB;
   --white: #ffffff;
   --black: #000000; }
@@ -21,19 +19,19 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: var(--secondaryFont);
+  font-family: var(--titleFont);
   font-size: 1.6rem;
   line-height: 2;
   background-color: white; }
 
 /* Headings */
 h1, h2, h3, h4, p {
-  font-family: var(--mainFont);
+  font-family: var(--titleFont);
   margin: .5rem 0;
   line-height: 1.2; }
 
 p {
-  font-family: var(--secondaryFont);
+  font-family: var(--titleFont);
   font-size: 1.5rem; }
 
 h1 {
@@ -153,8 +151,7 @@ body.home .site-header {
     color: white;
     margin-top: 15rem; }
     body.home .site-header .tagline p {
-      margin: 0;
-      font-size: 2rem; }
+      margin: 0; }
     body.home .site-header .tagline button {
       background-color: var(--primary);
       border: none;
@@ -265,14 +262,13 @@ body.home .site-header {
   .footer-menu .menu li:last-of-type {
     margin-right: 0; }
   .footer-menu a {
-    font-family: var(--mainFont);
+    font-family: var(--titleFont);
     font-size: 2rem;
     color: var(--black); } }
 
 .copyright {
   text-align: center;
   flex: 1;
-  font-family: var(--mainFont);
   font-size: 2rem;
   margin: 0; }
 
