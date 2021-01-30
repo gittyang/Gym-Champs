@@ -75,27 +75,35 @@ img {
 .section {
   padding: 5rem 0; }
 
+.container {
+  max-width: 120rem; }
+
 .button-container {
   display: flex;
   justify-content: flex-end; }
-  .button-container .button {
-    display: block;
-    background-color: var(--primary);
-    color: white;
-    flex: 1;
-    text-align: center;
-    border-radius: .5rem;
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2rem; }
-    @media (min-width: 768px) {
-      .button-container .button {
-        display: inline-block;
-        flex: 0 0 auto; } }
-    .button-container .button:hover {
-      cursor: pointer;
-      background-color: #bd3636; }
+
+.button {
+  text-align: center;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-family: var(--promptFont); }
+
+.buttonRed {
+  background-color: var(--primary);
+  border: none;
+  color: white; }
+  .buttonRed:hover {
+    cursor: pointer;
+    background-color: #bd3636; }
+
+.buttonWhiteBorder {
+  background-color: var(--primary);
+  border: 2px solid white;
+  color: white; }
+  .buttonWhiteBorder:hover {
+    cursor: pointer;
+    background-color: #bd3636; }
 
 .site-header {
   background-color: var(--darkGray);
@@ -154,17 +162,7 @@ body.home .site-header {
     body.home .site-header .tagline p {
       margin: 0; }
     body.home .site-header .tagline button {
-      background-color: var(--primary);
-      border: none;
-      border-radius: .5rem;
-      color: white;
-      font-size: 2rem;
-      font-family: var(--promptFont);
-      margin-top: 2rem;
-      padding: 1rem 2rem; }
-      body.home .site-header .tagline button:hover {
-        cursor: pointer;
-        background-color: #bd3636; }
+      margin-top: 2rem; }
   @media (min-width: 768px) {
     body.home .site-header .header-grid .navigation-bar {
       display: grid; }
@@ -276,7 +274,8 @@ body.home .site-header {
     flex: 0 0 auto; } }
 
 .section-welcome {
-  background-color: var(--secondary); }
+  background-color: var(--primary);
+  color: white; }
 
 .section-areas .areas-container {
   display: flex;
@@ -408,9 +407,6 @@ body.home .site-header {
   max-width: 80rem;
   margin: 0 auto; }
 
-.page h1 {
-  margin-bottom: 3rem; }
-
 @media (min-width: 768px) {
   .with-sidebar {
     max-width: 140rem;
@@ -421,14 +417,37 @@ body.home .site-header {
       margin-right: 6rem; }
       .with-sidebar .page-content p.content-class {
         font-weight: 700;
-        font-family: var(--promptFontyFont);
         font-size: 2rem;
         text-align: center; }
       .with-sidebar .page-content .featured-img {
         height: 500px;
-        width: 100%; }
+        width: 100%;
+        margin-top: 3rem; }
     .with-sidebar .sidebar {
       width: 40%; } }
+
+.sidebar li {
+  list-style-type: disc; }
+  .sidebar li a {
+    color: black;
+    font-size: 1.5rem; }
+
+.sidebar .widget {
+  margin-bottom: 4rem;
+  max-width: 500px; }
+  .sidebar .widget .classes-header {
+    margin-bottom: 2rem; }
+  .sidebar .widget .sidebar-classes-list .sidebar-class {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; }
+    .sidebar .widget .sidebar-classes-list .sidebar-class .class-content {
+      flex: 0 0 calc(70% - 2em); }
+      .sidebar .widget .sidebar-classes-list .sidebar-class .class-content a {
+        font-weight: normal; }
+      .sidebar .widget .sidebar-classes-list .sidebar-class .class-content p {
+        font-size: 1.5rem;
+        margin: 0; }
 
 .about img {
   display: flex;
@@ -494,30 +513,6 @@ body.home .site-header {
         color: var(--white); }
       .card .card-content .date-published {
         color: white; } }
-
-.sidebar li {
-  list-style-type: disc; }
-  .sidebar li a {
-    color: black;
-    font-size: 1.5rem; }
-
-.sidebar .widget {
-  margin-bottom: 4rem; }
-  .sidebar .widget .classes-header {
-    margin-bottom: 2rem; }
-  .sidebar .widget .sidebar-classes-list .sidebar-class {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem; }
-    .sidebar .widget .sidebar-classes-list .sidebar-class .sidebar-widget-image {
-      flex: 0 0 30%; }
-    .sidebar .widget .sidebar-classes-list .sidebar-class .class-content {
-      flex: 0 0 calc(70% - 2em); }
-      .sidebar .widget .sidebar-classes-list .sidebar-class .class-content a {
-        font-weight: normal; }
-      .sidebar .widget .sidebar-classes-list .sidebar-class .class-content p {
-        font-size: 1.5rem;
-        margin: 0; }
 
 .gallery-images {
   display: grid;

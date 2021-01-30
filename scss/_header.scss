@@ -110,19 +110,7 @@ body.home {
         }
 
         button {
-          background-color: var(--primary);
-          border: none;
-          border-radius: .5rem;
-          color: white;
-          font-size: 2rem;
-          font-family: var(--promptFont);
           margin-top: 2rem;
-          padding: 1rem 2rem;
-
-          &:hover {
-            cursor: pointer;
-            background-color: lighten(#b13333, 3%); 
-          }
         }
       }
 

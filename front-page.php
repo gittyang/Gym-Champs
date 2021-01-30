@@ -9,8 +9,11 @@
   <!-- Welcome Section -->
 
   <section class="section section-welcome text-center">
-    <h2 class="text-primary"><?php the_field('welcome_heading'); ?></h2>
-    <p><?php the_field('welcome_text'); ?></p>
+    <div class="container">
+      <h2><?php the_field('update_headline'); ?></h2>
+      <p><?php the_field('update_description'); ?></p>
+      <button class="button buttonWhiteBorder"><?php the_field('update_button'); ?></button>
+    </div>
   </section>
 
     <!-- Area Section -->
@@ -63,7 +66,7 @@
       <?php gymchamps_classes_list(4); ?>
 
       <div class="button-container">
-        <a class="button" href="<?php echo get_permalink( get_page_by_title('Classes') ); ?>">
+        <a class="button buttonRed" href="<?php echo get_permalink( get_page_by_title('Classes') ); ?>">
           View All Classes
         </a>
       </div>

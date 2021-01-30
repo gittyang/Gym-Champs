@@ -10,7 +10,7 @@ get_header(); ?>
 
 --- page-sidebar.php ---
 
-<Main class="container page section with-sidebar">
+<Main class="container section with-sidebar">
   <div class="page-content">
 
   <!-- use this function to obtain the page template inside the specified folder-->

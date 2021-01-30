@@ -14,31 +14,42 @@
   padding: 5rem 0;
 }
 
+.container {
+  max-width: 120rem;
+}
+
 // Buttons
 .button-container {
   display: flex;
   justify-content: flex-end;
+}
 
-  .button {
-    display: block;
-    background-color: var(--primary);
-    color: white;
-    flex: 1;
-    text-align: center;
-    border-radius: .5rem;
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2rem;
+.button {
+  text-align: center;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-family: var(--promptFont);
+}
 
-    @media (min-width: 768px) {
-      display: inline-block;
-      flex: 0 0 auto;
-    }
+.buttonRed {
+  background-color: var(--primary);
+  border: none;
+  color: white;
 
-    &:hover {
-      cursor: pointer;
-      background-color: lighten(#b13333, 3%); 
-    }
+  &:hover {
+    cursor: pointer;
+    background-color: lighten(#b13333, 3%); 
+  }
+}
+
+.buttonWhiteBorder {
+  background-color: var(--primary);
+  border: 2px solid white;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    background-color: lighten(#b13333, 3%); 
   }
 }

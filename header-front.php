@@ -42,7 +42,7 @@
       <h1><?php the_field('hero_tagline'); ?></h1>
       <p><?php the_field('hero_content'); ?></p>
       <p><?php the_field('hero_content_2'); ?></p>
-      <button>Sign Up</button>
+      <button class="button buttonRed">Sign Up</button>
     </div>
 
 </header>
