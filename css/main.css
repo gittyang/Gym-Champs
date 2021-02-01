@@ -8,7 +8,7 @@
   --primary: #970C10;
   --secondary: #faf7f0;
   --darkGray: rgba(27, 27, 27, 1);
-  --lightGray: #EBEBEB;
+  --lightGray: rgb(172, 172, 172);
   --white: #ffffff;
   --black: #000000; }
 
@@ -27,7 +27,7 @@ body {
   background-color: var(--secondary); }
 
 /* Headings */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: var(--promptFont);
   margin: .5rem 0;
   line-height: 1.2; }
@@ -46,7 +46,10 @@ h3 {
   font-size: 3rem; }
 
 h4 {
-  font-size: 2.2rem; }
+  font-size: 2.4rem; }
+
+h5 {
+  font-size: 1.8rem; }
 
 a {
   text-decoration: none; }
@@ -318,8 +321,7 @@ body.home .site-header {
 .instructors {
   background-color: var(--secondary); }
   .instructors .container .instructor-list li {
-    margin: 2rem 1rem;
-    border-bottom: 1px solid var(--lightGray); }
+    margin: 2rem 1rem; }
     .instructors .container .instructor-list li img {
       display: block;
       height: 350px;
@@ -404,50 +406,59 @@ body.home .site-header {
   margin-bottom: 3rem; }
 
 .page.no-sidebars {
-  max-width: 80rem;
+  max-width: 120rem;
   margin: 0 auto; }
 
-@media (min-width: 768px) {
-  .with-sidebar {
-    max-width: 140rem;
-    display: flex;
-    justify-content: space-between; }
-    .with-sidebar .page-content {
-      width: 60%;
-      margin-right: 6rem; }
-      .with-sidebar .page-content p.content-class {
-        font-weight: 700;
-        font-size: 2rem;
-        text-align: center; }
-      .with-sidebar .page-content .featured-img {
-        height: 500px;
-        width: 100%;
-        margin-top: 3rem; }
-    .with-sidebar .sidebar {
-      width: 40%; } }
+.with-sidebar {
+  display: flex;
+  justify-content: space-between; }
+  .with-sidebar .page-content {
+    width: 60%;
+    margin-right: 5rem; }
+    .with-sidebar .page-content p.content-class {
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center; }
+    .with-sidebar .page-content .featured-img {
+      height: 500px;
+      width: 100%;
+      margin-top: 3rem; }
 
-.sidebar li {
-  list-style-type: disc; }
-  .sidebar li a {
-    color: black;
-    font-size: 1.5rem; }
-
-.sidebar .widget {
-  margin-bottom: 4rem;
-  max-width: 500px; }
-  .sidebar .widget .classes-header {
-    margin-bottom: 2rem; }
-  .sidebar .widget .sidebar-classes-list .sidebar-class {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem; }
-    .sidebar .widget .sidebar-classes-list .sidebar-class .class-content {
-      flex: 0 0 calc(70% - 2em); }
-      .sidebar .widget .sidebar-classes-list .sidebar-class .class-content a {
-        font-weight: normal; }
-      .sidebar .widget .sidebar-classes-list .sidebar-class .class-content p {
-        font-size: 1.5rem;
-        margin: 0; }
+.sidebar {
+  width: 350px;
+  position: relative; }
+  .sidebar:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background: var(--lightGray);
+    left: -20%;
+    top: 0; }
+  .sidebar li {
+    list-style-type: disc; }
+    .sidebar li a {
+      color: black;
+      font-size: 1.5rem; }
+  .sidebar .widget {
+    margin-bottom: 4rem;
+    list-style-type: disc; }
+    .sidebar .widget h4 {
+      text-decoration: underline; }
+    .sidebar .widget .sidebar-classes-list {
+      display: list-item;
+      list-style-type: outside; }
+      .sidebar .widget .sidebar-classes-list .sidebar-class {
+        list-style-type: outside; }
+        .sidebar .widget .sidebar-classes-list .sidebar-class li {
+          list-style-type: disc; }
+        .sidebar .widget .sidebar-classes-list .sidebar-class .class-content {
+          flex: 0 0 calc(70% - 2em);
+          list-style-type: disc; }
+          .sidebar .widget .sidebar-classes-list .sidebar-class .class-content a {
+            font-weight: normal; }
+          .sidebar .widget .sidebar-classes-list .sidebar-class .class-content p {
+            margin: 0; }
 
 .about img {
   display: flex;
@@ -460,7 +471,8 @@ body.home .site-header {
 .card {
   margin-bottom: 4rem; }
   .card img {
-    display: block; }
+    width: 100%;
+    margin: auto; }
   .card .card-content {
     padding: 3rem;
     text-align: center; }

@@ -34,7 +34,7 @@ function gymchamps_classes_list($number = -1) { ?>
     ?>
 
     <li class="gym-class card gradient">
-      <?php the_post_thumbnail('box'); ?>
+      <?php the_post_thumbnail('mediumSize'); ?>
 
       <div class="card-content">
         <a href="<?php the_permalink(); ?>">

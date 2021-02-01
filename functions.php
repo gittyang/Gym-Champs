@@ -108,8 +108,8 @@ function gymchamps_widgets() {
     // html displayed
     'before_widget' => '<div class="widget">',
     'after_widget'=> '</div>',
-    'before_title' => '<h3 class="text-primary">',
-    'after_title' => '</h3>',
+    'before_title' => '<h4 class="text-primary">',
+    'after_title' => '</h4>',
   )); 
 
   // sidebar 2 can be created here as well

@@ -11,7 +11,7 @@
   --primary: #970C10;
   --secondary: #faf7f0;
   --darkGray: rgba(27, 27, 27, 1);
-  --lightGray: #EBEBEB;
+  --lightGray: rgb(172, 172, 172);
 
   --white: #ffffff;
   --black: #000000;
@@ -34,7 +34,7 @@ body {
 }
 
 /* Headings */
-h1, h2, h3 , h4 {
+h1, h2, h3 , h4, h5 {
   font-family: var(--promptFont);
   margin: .5rem 0;
   line-height: 1.2;
@@ -59,7 +59,12 @@ h3 {
 }
 
 h4 {
-  font-size: 2.2rem; 
+  font-size: 2.4rem; 
+  // font-weight: normal;
+}
+
+h5 {
+  font-size: 1.8rem; 
   // font-weight: normal;
 }
 

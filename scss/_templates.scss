@@ -7,46 +7,56 @@
 }
 
 .page.no-sidebars {
-  max-width: 80rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
 
 
 // Page with sidebars
-@media (min-width: 768px) {
-  .with-sidebar {
-    max-width: 140rem;
-    display: flex;
-    justify-content: space-between;
 
-    .page-content {
-      width: 60%;
-      margin-right: 6rem;
+.with-sidebar {
+  display: flex;
+  justify-content: space-between;
 
-      p.content-class {
-        font-weight: 700;
-        font-size: 2rem;
-        text-align: center;
-      }
+  .page-content {
+    width: 60%;
+    margin-right: 5rem;
 
-      .featured-img {
-        height: 500px;
-        width: 100%;
-        margin-top: 3rem;
-      }
+    p.content-class {
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
     }
 
-    .sidebar {
-      width: 40%;
+    .featured-img {
+      height: 500px;
+      width: 100%;
+      margin-top: 3rem;
     }
   }
+
 }
+
 
 
 
 // Sidebar
 .sidebar {
+  width: 350px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background: var(--lightGray);
+    left: -20%;
+    top: 0;
+
+  }
+
 
   li {
     list-style-type: disc;
@@ -57,34 +67,35 @@
     }
   }
   
-  .widget{
-    // border: 2px solid black;
+  .widget {
     margin-bottom: 4rem; 
-    max-width: 500px;
+    list-style-type: disc;
 
-    .classes-header {
-      // border: 2px solid cyan;
-      margin-bottom: 2rem;
+    h4 {
+      text-decoration: underline;
     }
+
     .sidebar-classes-list {
-      // border: 2px solid red;
+      display:list-item;
+      list-style-type: outside;
 
       .sidebar-class {
-        // border: 2px solid blue;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 2rem;
+        list-style-type: outside;
+
+        li {
+          list-style-type: disc;
+        }
 
         .class-content {
-          // border: 2px solid orange;
           flex: 0 0 calc(70% - 2em);
+          list-style-type: disc;
 
           a {
             font-weight: normal;
           }
           
+          // unknown margin?
           p {
-            font-size: 1.5rem;
             margin: 0;
           }
         }
