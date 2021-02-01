@@ -2,7 +2,7 @@
 
 <?php get_header('front'); ?>
 
----hello from front-page.php ---
+<!-- ---hello from front-page.php --- -->
 
 <?php while( have_posts() ): the_post(); ?>
 

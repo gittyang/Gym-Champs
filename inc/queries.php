@@ -16,7 +16,7 @@
 // Needs $number parameter to display 4 posts in front-page.php, 
 // Include -1 to remove error and instead display all
 function gymchamps_classes_list($number = -1) { ?>
-  --- hello from queries.php ---
+  <!-- --- hello from queries.php --- -->
 
    <!-- gymchamps_classes_list function displays all gym classes -->
   <ul class="classes-list">
@@ -62,7 +62,7 @@ function gymchamps_classes_list($number = -1) { ?>
 // This section contains the Front End code to display the "Gym Instructors"
 
 function gymchamps_instructors_list() { ?> 
-  --- hello from queries.php ---
+  <!-- --- hello from queries.php --- -->
 
   <ul class="instructor-list">
     <?php 
@@ -104,7 +104,8 @@ function gymchamps_instructors_list() { ?>
 // This section contains the Front End code to display the "Gym Testimonials"
 
 function gymchamps_testimonials_list() { ?>
-  <p class="text-primary"> --- hello from queries.php --- </p> 
+
+  <!-- --- hello from queries.php ---  -->
   <ul class="testimonials-list">
 
     <?php 

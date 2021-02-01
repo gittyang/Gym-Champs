@@ -1,7 +1,7 @@
 <!-- Blog Page -->
 
 <?php get_header(); ?>
---- hello from home.php ---
+<!-- --- hello from home.php --- -->
 
 <main class="section section-blog">
   <div class="container blog-container">

@@ -9,7 +9,7 @@
 </head>
 <body <?php body_class(); ?> >
 
---- hello from header-front.php ---
+<!-- --- hello from header-front.php --- -->
   
 <header class="site-header">
 
@@ -20,7 +20,7 @@
         <div class="nav-container">
           <div class="logo">
             <a href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_template_directory_uri() . "/img/logo.jpg"?>" alt="Site Logo">
+            <img src="<?php echo get_template_directory_uri() . "/img/logo.png"?>" alt="Site Logo">
             </a>
           </div><!-- .logo -->
   

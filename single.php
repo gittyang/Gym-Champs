@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
---- hello from single.php ---
+<!-- --- hello from single.php --- -->
 
 <Main class="container page section with-sidebar">
   <div class="page-content">

@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
---- page-sidebar.php ---
+<!-- --- page-sidebar.php --- -->
 
 <Main class="container section with-sidebar">
   <div class="page-content">

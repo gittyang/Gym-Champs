@@ -1,6 +1,6 @@
 
 <?php get_header(); ?>
---- hello from page-classes.php --- 
+<!-- --- hello from page-classes.php ---  -->
 
 <Main class="container about page section no-sidebars">
 

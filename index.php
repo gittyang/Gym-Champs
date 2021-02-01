@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
---- hello from index.php ---
+<!-- --- hello from index.php --- -->
 <?php  
 
 

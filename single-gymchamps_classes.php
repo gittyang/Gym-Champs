@@ -5,7 +5,7 @@
 
 <?php get_header(); ?>
 
---- hello from single-gymchamps_classes.php ---
+<!-- --- hello from single-gymchamps_classes.php --- -->
 
 <Main class="container page section with-sidebar">
   <div class="page-content">

@@ -17,7 +17,7 @@
         
         <div class="logo">
           <a href="<?php echo home_url(); ?>">
-          <img src="<?php echo get_template_directory_uri() . "/img/logo.jpg"?>" alt="Site Logo">
+          <img src="<?php echo get_template_directory_uri() . "/img/logo.png"?>" alt="Site Logo">
           </a>
         </div><!-- .logo -->
 

@@ -1,7 +1,7 @@
 <!-- This page shows the blogs sidebar -->
 
 <aside class="sidebar">
---- hello from sidebar.php ---
+<!-- --- hello from sidebar.php --- -->
 
   <?php
   
